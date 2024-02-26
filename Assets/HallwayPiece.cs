@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HallwayPiece : MonoBehaviour
 {
-    enum HallwayType
+    public enum HallwayType
     {
         straight,
         straightCloset,
@@ -12,4 +12,8 @@ public class HallwayPiece : MonoBehaviour
         turnLeft,
         turnRight
     }
+
+    [SerializeField] float _length = 2;
+    [SerializeField] bool _isEnd = true;
+    [SerializeField] PrefabContainer[] _typePrefabs;
 }

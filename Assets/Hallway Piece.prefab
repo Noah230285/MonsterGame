@@ -203,6 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 886500036118231532}
+  - component: {fileID: 6506815064125324606}
   m_Layer: 0
   m_Name: Hallway Piece
   m_TagString: Untagged
@@ -228,6 +229,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6506815064125324606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2155803742200730728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3f800603de75e439256b9186a826a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _typePrefabs: []
 --- !u!1 &5202405143090236624
 GameObject:
   m_ObjectHideFlags: 0
