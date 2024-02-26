@@ -7,13 +7,33 @@ public class HallwayPiece : MonoBehaviour
     public enum HallwayType
     {
         straight,
-        straightCloset,
-        straightPopout,
+        closet,
+        popout,
         turnLeft,
-        turnRight
+        turnRight,
+        turnFork
     }
 
+    [SerializeField] Transform _startConnectPoint;
+    public Transform startConnectPoint => _startConnectPoint;
+
+    [SerializeField] Transform _endConnectPoint;
+    public Transform endConnectPoint => _endConnectPoint;
+
+    [SerializeField] HallwayType _type;
     [SerializeField] float _length = 2;
     [SerializeField] bool _isEnd = true;
-    [SerializeField] PrefabContainer[] _typePrefabs;
+
+    [SerializeField, HideInInspector] HallwayBrain _brain;
+    public HallwayBrain brain
+    {
+        get => _brain;
+        set => _brain = value;
+    }
+
+
+#if UNITY_EDITOR
+    [SerializeField, HideInInspector] HallwayType _createType;
+#endif
+
 }
